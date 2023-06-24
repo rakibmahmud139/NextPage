@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from './components/Header';
@@ -9,7 +10,9 @@ const App = () => {
       {/* header */}
       <Header />
 
-      <Outlet />
+     <div className='min-h-[calc(100vh-136px)]'>
+     <Outlet />
+     </div>
 
       {/* footer */}
       <Footer />
